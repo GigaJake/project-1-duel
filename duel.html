@@ -15,35 +15,62 @@
     </style>
   </head>
   <body>
-    <div id="duel1" class="visible">
-      ~O  O~
-      &lt;|/\|&gt;
-       |\ |\
+    <div id="doom1" class="visible">
+      ______ _____ _____ __   ___
     </div>
-    <div id="duel2">
-      ~O  O~
-      &lt;|--|&gt;
-      / \/ \
+    <div id="doom2">
+      ______ _____ _____ __   ___
+      | ___  \  _  |  _  |  \ /  |
     </div>
-    <div id="duel3">
-      ~O  O~
-      &lt;|\/|&gt;
-       |\ |\
+    <div id="doom3">
+      ______ _____ _____ __   ___
+      | ___  \  _  |  _  |  \ /  |
+      | |  \ | | | | | | | . V . |
+    </div>
+    <div id="doom4">
+      ______ _____ _____ __   ___
+      | ___  \  _  |  _  |  \ /  |
+      | |  \ | | | | | | | . V . |
+      | |  / | \_/ | \_/ | |\ /| |
+    </div>
+    <div id ="doom5">
+      ______ _____ _____ __   ___
+      | ___  \  _  |  _  |  \ /  |
+      | |  \ | | | | | | | . V . |
+      | |  / | \_/ | \_/ | |\ /| |
+      | | / / \   / \   /| | V | |
+    </div>
+    <div id="doom6">
+      ______ _____ _____ __   ___
+      | ___  \  _  |  _  |  \ /  |
+      | |  \ | | | | | | | . V . |
+      | |  / | \_/ | \_/ | |\ /| |
+      | | / / \   / \   /| | V | |
+      | `' /   \_/   \_/ \_|   | |
+    </div>
+    <div id="doom7">
+      ______ _____ _____ __   ___
+      | ___  \  _  |  _  |  \ /  |
+      | |  \ | | | | | | | . V . |
+      | |  / | \_/ | \_/ | |\ /| |
+      | | / / \   / \   /| | V | |
+      | `' /   \_/   \_/ \_|   | |
+      |___/                    \_|
     </div>
     <script>
       var frame = 1;
       setInterval(function(){
         console.log(frame);
-        var el = document.getElementById('duel'+frame);
+        var el = document.getElementById('doom'+frame);
         el.className = '';
 
         frame++;
-        if(frame == 4)
+        if(frame == 8)
         {
           frame = 1;
         }
 
-        el = document.getElementById('duel'+frame);
+        el = document.getElementById('doom'+frame);
         el.className = 'visible';
       }, 1000);
 
